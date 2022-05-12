@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="http<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">   
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="dropdown-cart">
+    <h4>Cart</h4>
+    <p id="empty-cart">The cart is empty</p>
+    <div id="mini-info">
+      <img id="mini-cart-img" src="images/image-product-1-thumbnail.jpg" alt="mini-sneaker-thumbnail">
+      <div id="mini-text-of-sneaker">
+        <p id="mini-name"> Fall Limited Edition Sneakers</p>
+        <div id="mini-final-price-calculation"><p id="current-price">$125.00</p>
+          <p id="mini-amount-to-buy">
+          <p id="mini-total-price"></p></div>
+      </div>
+      <img onclick=trash() id="trash" src="images/icon-delete.svg" alt="trash-icon">
+    </div>
+    <button id="checkout">Checkout</button>
+  </div>
+
+<div id="menu">
+  <img id="logo" src="images/logo.svg" alt="Logo">
+  <div id="links">
+    <a href=""><h3>Collections</h3></a>
+    <a href=""><h3>Men</h3></a>
+    <a href=""><h3>Women</h3></a>
+    <a href=""><h3>About</h3></a>
+    <a href=""><h3>Contact</h3></a>
+  </div>
+  
+  
+  <div id="cart" onclick="showCart()"><img src="images/icon-cart.svg" alt="cart-icon">
+  <p id="notification-bubble"></p>
+</div>
+  <img id="profile" src="images/image-avatar.png" alt="profile">
+</div>
+
+<div id="content">
+  <div id="slide-show">
+    <img id="main-img" src="images/image-product-1.jpg" alt="main-img">
+    <div id="img-options">
+      <img id="slide-img1" onclick=changeImg(slideImg1) src="images/image-product-1-thumbnail.jpg" alt="slide-img1">
+      <img id="slide-img2" onclick=changeImg(slideImg2) src="images/image-product-2-thumbnail.jpg" alt="slide-img1">
+      <img id="slide-img3" onclick=changeImg(slideImg3) src="images/image-product-3-thumbnail.jpg" alt="slide-img1">
+      <img id="slide-img4" onclick=changeImg(slideImg4) src="images/image-product-4-thumbnail.jpg" alt="slide-img1">
+    </div>  
+
+  </div>
+  <div id="info-about-product">
+    <div id="price-and-description">
+      <p>Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p id="description">These low-profile sneakers are your perfect casual wear
+         companion. Featurubg a durable rubber outer sole, they'll 
+         withstand everything the weather can offer.</p>
+         <div id="price"><h2>$125.00 <h4>50%</h4></h2></div>
+         <p id="actual-price">$250.00</p>
+         <div id="add-to-cart">
+           <div id="amount">
+            <button onclick=subtract() id="-">-</button>
+            <h3 id="amount-selected">0</h3>
+            <button onclick=add() id="+">+</button>
+          </div>
+           <button onclick=addToCart() id="add-to-cart-button"><img id="add-cart-icon"  src="images/icon-cart-white.svg" alt="shoping-cart-icon"> Add to cart</button>
+         </div>
+    </div>
+
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Simon</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
